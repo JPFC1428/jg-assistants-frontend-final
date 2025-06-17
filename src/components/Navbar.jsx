@@ -1,3 +1,5 @@
+// src/components/Navbar.jsx
+
 import React from 'react';
 
 const Navbar = () => {
@@ -5,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img src="assets/images/logo.png" alt="JG Assistants logo" className="mb-3" style={{ height: '200px' }} />
+          <img src="/logo.png" alt="JG Assistants logo" style={{ height: "60px" }} />
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
@@ -23,6 +25,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
