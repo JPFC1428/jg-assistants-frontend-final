@@ -1,15 +1,15 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Header from './Header';
-import Services from './Services';
-import Footer from './Footer';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
-      <Navbar />
       <Header />
-      <Services />
+      <Hero />
+      <Features />
       <Footer />
     </div>
   );
