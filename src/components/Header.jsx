@@ -1,7 +1,7 @@
 // src/components/Header.jsx
 
 import React from 'react';
-
+import logo from '../assets/logo.png';
 const Header = () => {
   return (
     <section className="hero-section text-center text-white py-5" style={{ 
