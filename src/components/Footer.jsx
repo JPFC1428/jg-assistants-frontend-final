@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-3 mb-4">
-            <img src={logo} alt="JG Assistants Logo" className="mb-3" style={{ height: "80px" }} />
+            <img src={logo} alt="JG Assistants Logo" className="mb-3" style={{ height: "100px" }} />
             <p>La plataforma líder en asistentes virtuales inteligentes para transformar tu productividad.</p>
             <div className="d-flex gap-2">
               <a href="#" className="text-white"><FaFacebookF /></a>
