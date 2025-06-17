@@ -1,27 +1,57 @@
 import React from 'react';
+import { FaRobot, FaBrain, FaCogs } from 'react-icons/fa';
 
-function Services() {
+const Services = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto text-center">
-        <h3 className="text-3xl font-bold mb-10">Nuestros Servicios</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-6 border rounded-lg shadow">
-            <h4 className="text-xl font-semibold mb-2">Asistentes 24/7</h4>
-            <p>Siempre disponibles para tus clientes, en cualquier momento.</p>
+    <section className="py-5">
+      <div className="container">
+        <div className="text-center mb-5">
+          <h2 className="fw-bold">Nuestras Soluciones</h2>
+          <p className="text-muted">Descubre todo lo que nuestros asistentes pueden hacer por ti</p>
+        </div>
+        <div className="row g-4">
+          <div className="col-md-4">
+            <div className="card feature-card h-100">
+              <div className="card-body text-center p-4">
+                <div className="bg-primary bg-gradient p-3 rounded-circle d-inline-block mb-3">
+                  <FaRobot className="text-white fa-2x" />
+                </div>
+                <h4>Asistentes 24/7</h4>
+                <p className="text-muted">Disponibilidad constante para atender tus necesidades en cualquier momento.</p>
+                <a href="#" className="btn btn-sm btn-outline-primary">Saber más</a>
+              </div>
+            </div>
           </div>
-          <div className="p-6 border rounded-lg shadow">
-            <h4 className="text-xl font-semibold mb-2">Inteligencia Artificial</h4>
-            <p>Adaptación inteligente a cada necesidad de tu negocio.</p>
+
+          <div className="col-md-4">
+            <div className="card feature-card h-100">
+              <div className="card-body text-center p-4">
+                <div className="bg-success bg-gradient p-3 rounded-circle d-inline-block mb-3">
+                  <FaBrain className="text-white fa-2x" />
+                </div>
+                <h4>Inteligencia Artificial</h4>
+                <p className="text-muted">Tecnología de vanguardia que aprende y se adapta a tus requerimientos.</p>
+                <a href="#" className="btn btn-sm btn-outline-success">Saber más</a>
+              </div>
+            </div>
           </div>
-          <div className="p-6 border rounded-lg shadow">
-            <h4 className="text-xl font-semibold mb-2">Integraciones</h4>
-            <p>Fácil conexión con tus plataformas y herramientas actuales.</p>
+
+          <div className="col-md-4">
+            <div className="card feature-card h-100">
+              <div className="card-body text-center p-4">
+                <div className="bg-warning bg-gradient p-3 rounded-circle d-inline-block mb-3">
+                  <FaCogs className="text-white fa-2x" />
+                </div>
+                <h4>Integraciones</h4>
+                <p className="text-muted">Conecta con tus herramientas favoritas para un flujo de trabajo optimizado.</p>
+                <a href="#" className="btn btn-sm btn-outline-warning">Saber más</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Services;
