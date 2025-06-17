@@ -1,16 +1,19 @@
 import React from 'react';
 
-function Header() {
+const Header = () => {
   return (
-    <header className="bg-gray-100 py-20">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4">Bienvenido a JG Assistants</h2>
-        <p className="text-lg text-gray-600">
-          Soluciones de asistencia virtual personalizadas.
-        </p>
+    <section className="hero-section text-center">
+      <div className="container">
+        <h1 className="display-4 fw-bold mb-4">Bienvenido a JG Assistants</h1>
+        <p className="lead mb-5">Tu plataforma de asistentes virtuales inteligentes</p>
+        <div className="d-flex justify-content-center gap-3">
+          <a href="#" className="btn btn-light btn-lg px-4">Comenzar ahora</a>
+          <a href="#" className="btn btn-outline-light btn-lg px-4">Ver demo</a>
+        </div>
       </div>
-    </header>
+    </section>
   );
-}
+};
 
 export default Header;
+
