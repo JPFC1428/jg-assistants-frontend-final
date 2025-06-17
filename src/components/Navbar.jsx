@@ -1,13 +1,28 @@
 import React from 'react';
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="bg-blue-600 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-white font-bold text-xl">JG Assistants</h1>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container">
+        <a className="navbar-brand" href="#">
+          <img src="assets/images/logo.png" alt="JG Assistants logo" className="mb-3" style={{ height: '200px' }} />
+        </a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item"><a className="nav-link active" href="#">Inicio</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Funciones</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Precios</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Contacto</a></li>
+            <li className="nav-item"><a className="btn btn-outline-light ms-2" href="#">Iniciar Sesión</a></li>
+            <li className="nav-item"><a className="btn btn-primary ms-2" href="#">Registrarse</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
